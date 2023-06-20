@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <script>
+      //0. Позначення
+      //numberDayWeek - номер дня тижня
+      //dayWeek - день тижня
+      
+      //1. Вводимо необхідні дані
+      let numberDayWeek = prompt('Введіть номер дня тижня від 1 до 7', "1")
+      let dayWeek
+      //2. Знаходимо результат
+      switch (numberDayWeek) {
+         case '1':  dayWeek = 'Це понеділок'         
+            break;
+         case '2': dayWeek = 'Це вівторок'
+            break;
+         case '3': dayWeek = 'Це середа'
+            break;
+         case '4': dayWeek = 'Це четвер'
+            break;
+         case '5': dayWeek = "Це п'ятниця"
+            break;
+         case '6': dayWeek = 'Це субота'
+            break;
+         case '7': dayWeek = 'Це неділя'
+            break;
+         default: dayWeek = 'Такого дня немає :((('
+            break;
+      }
+      alert(dayWeek)
+   </script>
+
+</head>
+<body>
+   <h1>Завдання 6</h1>
+   <p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</p>
+</body>
+</html>

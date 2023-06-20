@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <script>
+      //0.Позначення
+      //ageUser - вік людини
+      //minUserChild - мінімальний вік дитини в садочку
+      //maxUserChild - максимальний вік дитини в садочку
+      //minUserSchoolboy - мінімальний вік школяра
+      //maxUserSchoolboy - максимальний вік школяра
+      //minUserStudent - мінімальний вік студенту
+      //maxUserStudent - максимальний вік студенту
+      //minUserEmployee - мінімальний вік працівника
+      //maxUserEmployee - максимальний вік працівника
+      //minUserPensioner - мінімальний вік пенсіонера
+      //maxUserPensioner - максимальний вік пенсіонера
+
+      //1. Вводимо необхідні дані
+      let ageUser = parseInt(prompt('Введіть Ваш вік', "Від 2 до 100"))
+      const minUserChild = 2
+      const maxUserChild = 5
+      const minUserSchoolboy = 6
+      const maxUserSchoolboy = 16
+      const minUserStudent = 17
+      const maxUserStudent = 22
+      const minUserEmployee = 23
+      const maxUserEmployee = 59
+      const minUserPensioner = 60
+      const maxUserPensioner = 100
+      //2. Виводимо результати
+      if(ageUser >= minUserChild && ageUser <= maxUserChild) alert('Ви дитина у садочку')
+      else if(ageUser >= minUserSchoolboy && ageUser <= maxUserSchoolboy) alert('Ви школяр')
+      else if(ageUser >= minUserStudent && ageUser <= maxUserStudent) alert('Ви студент')
+      else if(ageUser >= minUserEmployee && ageUser <= maxUserEmployee) alert('Ви працівник')
+      else if(ageUser >= minUserPensioner && ageUser <= maxUserPensioner) alert('Ви пенсіонер')
+      else alert('У введеного віку немає категорії')
+      </script>
+      </head>
+<body>
+   <h1>Завдання 4</h1>
+   <p>З клавіатури вводиться вік людини. 
+      Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).</p>
+</body>
+</html>
